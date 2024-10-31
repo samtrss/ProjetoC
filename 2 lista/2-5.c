@@ -1,8 +1,9 @@
 #include <stdio.h>
 float lecalculaIMC(float peso){
-    float altura, IMC;
+    float IMC;
+    int altura;
     printf("Digite a altura em centimetros\n");
-    scanf("%f", &altura);
+    scanf("%d", &altura);
     IMC = peso/((altura*altura)/10000);
     return IMC;
 }
