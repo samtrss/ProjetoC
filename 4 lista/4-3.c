@@ -21,11 +21,14 @@ void exibeAlt(float A1, float A2){
 }
 
 int main(){
-    float p, A1, A2;
-    int h;
-    printf("Digite o peso em kilogramas, a altura em centimetros, a area do inicio do ano e a area do final do ano\n");
-    scanf("%f %d %f %f",  &p ,&h ,&A1 ,&A2);
-    calcAreaCorp(h, p);
+    float pi, pf, A1, A2;
+    int hi, hf;
+    printf("Digite a altura inicial e o peso inicial\n");
+    scanf("%d %f", &hi, &pi );
+    printf("Digite a altura final e o peso final\n");
+    scanf("%d %f", &hf, &pf);
+    A1= calcAreaCorp(hi, pi);
+    A2= calcAreaCorp(hf, pf);
     exibeAlt(A1, A2);
     return 0;
     
