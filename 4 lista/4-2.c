@@ -8,7 +8,7 @@ uma pessoa e exiba uma das mensagens abaixo:
 • Eleitor: 18 ≤ idade ≤ 7*/
 
 #include <stdio.h>
-#include <math.h>
+ 
 
 int calcEleitor(int idade){
     if (idade < 16){
